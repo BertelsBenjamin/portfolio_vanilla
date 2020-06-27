@@ -1,0 +1,149 @@
+@import "variables";
+
+body {
+  /* *** GENERAL *** */
+  background: $color-bg-1;
+  font-family: $font-bungeeInline;
+  color: $color-text;
+  font-size: 16px;
+  #socials {
+    background-color: $color-bg-2;
+  }
+  .link,
+  .nav-link {
+    color: $color-acc-3;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $color-acc-1;
+    }
+  }
+
+  .active {
+    color: $color-acc-4;
+  }
+
+  .list {
+    list-style-type: none;
+  }
+  hr {
+    width: 80vw;
+    height: 1px;
+    border: none;
+    background-color: $color-bg-3;
+  }
+  button {
+    border-radius: 10px;
+    padding: 2vh 5vw;
+    margin-top: 5vh;
+    background-color: $color-bg-1;
+    color: $color-text;
+    font-family: $font-bungeeInline;
+    border: none;
+    box-shadow: 0px 7px 18px -8px black;
+    &:hover {
+      background-color: $color-bg-2;
+      color: $color-acc-1;
+      box-shadow: 0px 7px 18px -4px black;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 5vh;
+  }
+
+  .section-title {
+    color: $color-acc-3;
+    font-family: $font-bungeeInline;
+  }
+
+  .highlight-red {
+    color: $color-acc-1;
+    font-family: $font-bungeeInline;
+  }
+  .highlight-green {
+    color: $color-acc-2;
+    font-family: $font-bungeeInline;
+  }
+  .highlight-yellow {
+    color: $color-acc-3;
+    font-family: $font-spinnaker;
+  }
+
+  .highlight-blue {
+    color: $color-acc-4;
+    font-family: $font-bungeeInline;
+  }
+
+  [class^="svg-inline"] {
+    color: $color-bg-3;
+    &:hover {
+      color: $color-acc-1;
+    }
+  }
+
+  /* *** HEADER *** */
+  header {
+    box-shadow: 0px 7px 18px -8px black;
+    background-color: $color-bg-1;
+    line-height: 0.8rem;
+    .logo-wrapper {
+      font-family: $font-bungeeInline;
+      .logo {
+        color: $color-acc-1;
+        font-size: 1.2rem;
+      }
+      .sublogo {
+        color: $color-text;
+        font-size: 0.8rem;
+      }
+    }
+    .navbar {
+      width: 80vw;
+      .list-group-item {
+        list-style-type: none;
+        font-family: $font-doHyeon;
+        font-size: 16px;
+        color: $color-text;
+        line-height: 1.5rem;
+        &:hover {
+          color: $color-acc-1;
+        }
+      }
+    }
+  }
+
+  section {
+    font-family: $font-doHyeon;
+    box-shadow: 0px 7px 18px -8px black;
+  }
+  #techstack {
+    text-align: right;
+    background-color: $color-bg-2;
+    .card {
+      background-color: $color-bg-1;
+      box-shadow: 0px 7px 18px -8px black;
+      border-radius: 5px;
+      text-align: center;
+      &:hover {
+        box-shadow: 0px 7px 18px -4px black;
+      }
+    }
+  }
+  #projects {
+    #dashboard {
+      font-size: 12px;
+      .project {
+        color: $color-bg-3;
+      }
+      .prefix {
+        color: $color-acc-1;
+      }
+    }
+  }
+}

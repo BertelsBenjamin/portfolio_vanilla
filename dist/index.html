@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamin Bertels - Portfolio</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+  </head>
+  <body>
+    <div id="socials">
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-github-alt"></i>
+      <i class="far fa-envelope"></i>
+      <i class="fas fa-phone"></i>
+    </div>
+    <header class="container">
+      <div class="logo-wrapper">
+        <span class="logo">Benjamin Bertels</span><br />
+        <span class="sublogo">Web Developer</span>
+      </div>
+      <nav class="navbar">
+        <ul class="list-group">
+          <a href="#home" class="link nav-link"
+            ><li class="list-group-item">Home</li></a
+          >
+          <a href="#techstack" class="link nav-link"
+            ><li class="list-group-item">TechStack</li></a
+          >
+          <a href="#projects" class="link nav-link"
+            ><li class="list-group-item">Projects</li></a
+          >
+          <a href="#contact" class="link nav-link"
+            ><li class="list-group-item">Contact</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- HOME -->
+      <section id="home" class="container">
+        <h1 class="section-title">Benjamin says hi.</h1>
+        <p>
+          Benjamin is a web developer based in
+          <span class="highlight-blue">Hasselt, Belgium.</span>
+          He creates (data based) web applications. <br />
+          He's specialized in
+          <span class="highlight-red">Front End Development</span>, but likes to
+          <span class="highlight-red">design databases and API's</span> as well.
+        </p>
+        <div class="button-wrapper">
+          <a href="#contact"
+            ><button class="call-to-action">
+              Don't be shy... He's 50% human.
+            </button></a
+          >
+        </div>
+      </section>
+
+      <!-- TECHSTACK -->
+      <section id="techstack" class="container">
+        <h1 class="section-title">TechStack</h1>
+        <div class="techstack-card-wrapper">
+          <div class="card" id="card-frameworks">
+            <div class="card-icon-wrapper">
+              <i class="fab fa-angular fa-4x"></i>
+              <i class="fab fa-react fa-4x"></i>
+            </div>
+            <div class="card-text-wrapper">
+              <p>
+                Benjamin absolutely loves
+                <span class="highlight-red">Javascript</span>. <br />
+                Depending on the type of application, he uses
+                <span class="highlight-blue">Angular</span> or
+                <span class="highlight-red">React</span>.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card-backend">
+            <div class="card-icon-wrapper">
+              <i class="fab fa-node fa-4x"></i>
+            </div>
+            <div class="card-text-wrapper">
+              <p>
+                For creating API's, he uses
+                <span class="highlight-blue">Express.js</span> because it's fast
+                and simple. <br />
+                For handling third party modules, he is <u>very</u> fond of
+                <span class="highlight-red">Node.js</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card-database">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-database fa-4x"></i>
+            </div>
+            <div class="card-text-wrapper">
+              Databases he queries in
+              <span class="highlight-red">MySQL</span> or
+              <span class="highlight-red">NoSQL</span>. Recently he dove into
+              <span class="highlight-red">GraphQL</span> and also discovered the
+              power of <span class="highlight-blue">Firebase</span>.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="container">
+        <h1 class="section-title">Projects</h1>
+        <div id="dashboard">
+          <div class="project-selector" id="project-selector">
+            <div class="project" id="project-1">
+              <span class="active">Patrimonium</span>
+            </div>
+            <div class="project" id="project-2"><span>Baboo's</span></div>
+            <div class="project" id="project-3"><span>Space-X</span></div>
+            <div class="project" id="project-4"><span>Portfolio</span></div>
+          </div>
+
+          <hr />
+
+          <div class="panel">
+            <div class="col col-left">
+              <div id="project-title-wrapper" class="project-data-wrapper">
+                <span class="prefix">Title</span>
+                <span class="semi-colon">:</span>
+                <span>Patrimonium</span>
+              </div>
+              <div id="project-timespan-wrapper" class="project-data-wrapper">
+                <span class="prefix">Timespan</span>
+                <span class="semi-colon">:</span>
+                <span>October 2019 - March 2020</span>
+              </div>
+              <div id="project-duration-wrapper" class="project-data-wrapper">
+                <span class="prefix">Duration:</span>
+                <span class="semi-colon">:</span>
+                <span>238h 30min</span>
+              </div>
+              <div id="project-sourcecode-wrapper" class="project-data-wrapper">
+                <span class="prefix">Source code:</span>
+                <span class="semi-colon">:</span>
+                <span>Github</span>
+              </div>
+            </div>
+            <div class="col col-right">
+              <div class="technologies-wrapper">
+                <span class="prefix">Technologies</span>
+                <span class="semi-colon">:</span>
+                <span class="technologies">
+                  <span class="technology">Angular</span>
+                  <span class="technology">Express.js</span>
+                  <span class="technology">ng-bootstrap</span>
+                  <span class="technology">MySQL</span>
+                </span>
+              </div>
+            </div>
+            <div class="row row-bottom project-description-wrapper">
+              <span class="prefix">Description</span>
+              <span class="semi-colon">:</span>
+              <span class="description"
+                ><p class="project-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  soluta quod minus obcaecati numquam, sint debitis explicabo
+                  expedita! Laudantium, nemo maxime porro reprehenderit
+                  obcaecati dicta sequi placeat dolorum dolores assumenda.
+                </p></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="container">
+        <h1 class="section-title">Contact</h1>
+      </section>
+    </main>
+    <footer class="container">
+      <h1 class="section-title">Footer</h1>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
