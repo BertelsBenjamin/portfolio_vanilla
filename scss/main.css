@@ -80,7 +80,7 @@ body .highlight-red {
 }
 
 body .highlight-green {
-  color: #4ffff3;
+  color: #fc8e4f;
   font-family: "Bungee Inline", cursive;
 }
 
@@ -95,7 +95,7 @@ body .highlight-blue {
 }
 
 body [class^="svg-inline"] {
-  color: #324153;
+  color: #fc8e4f;
 }
 
 body [class^="svg-inline"]:hover {
@@ -172,7 +172,7 @@ body #projects #dashboard .project {
 }
 
 body #projects #dashboard .prefix {
-  color: #4ffff3;
+  color: #fc8e4f;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -202,11 +202,35 @@ body #projects #dashboard .prefix {
     height: -moz-max-content;
     height: max-content;
   }
+  body #project-selector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0 5vw;
+  }
+  body #project-selector .project {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: auto !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -243,9 +267,6 @@ body section .section-title {
 }
 
 body header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,11 +389,14 @@ body #projects #dashboard #project-selector {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  overflow: auto;
+  padding: 0 5vw;
+}
+
+body #projects #dashboard #project-selector .project {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 40vw;
 }
 
 body #projects #dashboard .panel {

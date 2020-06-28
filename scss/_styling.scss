@@ -81,7 +81,7 @@ body {
   }
 
   [class^="svg-inline"] {
-    color: $color-bg-3;
+    color: $color-acc-2;
     &:hover {
       color: $color-acc-1;
     }
@@ -142,7 +142,7 @@ body {
         color: $color-bg-3;
       }
       .prefix {
-        color: $color-acc-1;
+        color: $color-acc-2;
       }
     }
   }

@@ -2,6 +2,9 @@
 @import "styling";
 @import "mobile";
 
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   padding: 0;
   margin: 0;
@@ -30,8 +33,6 @@ body {
     }
   }
   header {
-    position: sticky;
-    top: 0;
     height: 12vh;
     display: flex;
     flex-direction: column;
@@ -102,8 +103,12 @@ body {
       height: auto;
       #project-selector {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        overflow: auto;
+        padding: 0 5vw;
+        .project {
+          flex-shrink: 0;
+          width: 40vw;
+        }
       }
       .panel {
         display: grid;

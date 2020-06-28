@@ -20,6 +20,17 @@
         height: max-content;
       }
     }
+    #project-selector {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      padding: 0 5vw;
+      .project {
+        flex-shrink: 0;
+        width: auto !important;
+      }
+    }
   }
 }
 
