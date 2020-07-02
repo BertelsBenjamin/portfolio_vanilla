@@ -110,52 +110,71 @@
         <h1 class="section-title">Projects</h1>
         <div id="dashboard">
           <div class="project-selector" id="project-selector">
-            <div class="project" id="project-1">
-              <span class="active">Patrimonium</span>
+            <div class="project" aria-label="patrimonium">
+              <span id="active" class="project" aria-label="patrimonium"
+                >Patrimonium</span
+              >
             </div>
-            <div class="project" id="project-2"><span>Baboo's</span></div>
-            <div class="project" id="project-3"><span>Space-X</span></div>
-            <div class="project" id="project-4"><span>Portfolio</span></div>
+            <div class="project">
+              <span class="project" aria-label="baboos">Baboo's</span>
+            </div>
+            <div class="project">
+              <span class="project" aria-label="spacex">SpaceX</span>
+            </div>
+            <div class="project">
+              <span class="project" aria-label="portfolio_vanilla"
+                >Portfolio</span
+              >
+            </div>
           </div>
 
           <hr />
 
           <div class="panel">
-            <div class="col col-left">
-              <div id="project-title-wrapper" class="project-data-wrapper">
-                <span class="prefix">Title</span>
-                <span class="semi-colon">:</span>
-                <span class="project-title">Patrimonium</span>
-              </div>
-              <div id="project-timespan-wrapper" class="project-data-wrapper">
-                <span class="prefix">Timespan</span>
-                <span class="semi-colon">:</span>
-                <span class="project-timespan">October 2019 - March 2020</span>
-              </div>
-              <div id="project-duration-wrapper" class="project-data-wrapper">
-                <span class="prefix">Duration:</span>
-                <span class="semi-colon">:</span>
-                <span class="project-duration">238h 30min</span>
-              </div>
-              <div id="project-sourcecode-wrapper" class="project-data-wrapper">
-                <span class="prefix">Source code:</span>
-                <span class="semi-colon">:</span>
-                <span class="project-sourcecode">Github</span>
-              </div>
+            <div id="project-title-wrapper" class="project-data-wrapper">
+              <span class="prefix">Title</span>
+              <span class="semi-colon">:</span>
+              <span class="project-title" aria-label="project-title"
+                >Patrimonium</span
+              >
             </div>
-            <div class="col col-right">
-              <div class="technologies-wrapper">
-                <span class="prefix">Technologies</span>
-                <span class="semi-colon">:</span>
-                <span class="project-technologies">
-                  <span class="technology">Angular</span>
-                  <span class="technology">Express.js</span>
-                  <span class="technology">ng-bootstrap</span>
-                  <span class="technology">MySQL</span>
-                </span>
-              </div>
+            <div id="project-timespan-wrapper" class="project-data-wrapper">
+              <span class="prefix">Timespan</span>
+              <span class="semi-colon">:</span>
+              <span class="project-timespan" aria-label="project-timespan"
+                >11/2019 - 3/2020</span
+              >
             </div>
-            <div class="row row-bottom project-description-wrapper">
+            <div id="project-duration-wrapper" class="project-data-wrapper">
+              <span class="prefix">Duration:</span>
+              <span class="semi-colon">:</span>
+              <span class="project-duration" aria-label="project-duration"
+                >150h</span
+              >
+            </div>
+            <div id="project-sourcecode-wrapper" class="project-data-wrapper">
+              <span class="prefix">Source code:</span>
+              <span class="semi-colon">:</span>
+              <span class="project-sourcecode" aria-label="project-sourcecode"
+                ><a
+                  class="link"
+                  href="https://github.com/BertelsBenjamin/patrimonium"
+                  target="_blank"
+                  >Github</a
+                ></span
+              >
+            </div>
+            <div class="technologies-wrapper">
+              <span class="prefix">Technologies</span>
+              <span class="semi-colon">:</span>
+              <span
+                class="project-technologies"
+                aria-label="project-technologies"
+              >
+                Angular, Express.js, MySQL
+              </span>
+            </div>
+            <div class="project-description-wrapper">
               <span class="prefix">Description</span>
               <span class="semi-colon">:</span>
               <span class="description"
@@ -177,6 +196,7 @@
     <footer class="container">
       <h1 class="section-title">Footer</h1>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

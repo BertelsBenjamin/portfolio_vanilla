@@ -19,8 +19,8 @@ body {
     }
   }
 
-  .active {
-    color: $color-acc-4;
+  #active {
+    color: $color-acc-4 !important;
   }
 
   .list {
