@@ -139,4 +139,11 @@ body {
       }
     }
   }
+
+  #contact {
+    .list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

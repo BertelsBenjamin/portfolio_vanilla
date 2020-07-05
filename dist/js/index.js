@@ -16,30 +16,20 @@ let projectSourceCode = document.querySelector(
 let projectTechnologies = document.querySelector(
   '[aria-label="project-technologies"]'
 );
+let projectDescription = document.querySelector(
+  '[aria-label="project-description"]'
+);
 
 /* FUNCTIONS */
 
-function setData(title, timespan, duration, technologies) {
+function setData(title, timespan, duration, technologies, description) {
   projectTitle.innerHTML = title;
   projectTimeSpan.innerHTML = timespan;
   projectDuration.innerHTML = duration;
   projectSourceCode.children[0].href = `${GitURL}/${projectTitle.innerHTML.toLowerCase()}`;
   projectTechnologies.innerHTML = technologies;
+  projectDescription.innerHTML = description;
 }
-
-/* COMMENT OUT TO MINIMIZE API FETCHES OR RUN ONCE FOR FETCHING DATA AND STORING IN LOCAL STORAGE WHEN STARTED A NEW SESSION*/
-/* wantedRepos.forEach((wantedRepo) => {
-  axios
-    .get(APIURL + wantedRepo.ariaLabel)
-    .then((res) => {
-      repos.push(res.data);
-      console.log(res.data);
-      console.log(repos);
-    })
-    .then((res) => {
-      localStorage.setItem("gitHubRepos", JSON.stringify(repos));
-    });
-}); */
 
 // Add Event Listeners to every clickable project (span, not wrapping div)
 let elements = [...document.getElementsByClassName("project")];
@@ -56,18 +46,26 @@ elements.forEach((element) =>
           "Patrimonium",
           "11/2019 - 3/2020",
           "150h",
-          "Angular, Express.js, MySQL"
+          "Angular, Express.js, MySQL",
+          "SaaS project that automates the service department of a piano service company. It let's technicians log their activities and dispatchers generate data driven PDF reports."
         );
         break;
       case "baboos":
-        setData("Baboos", "A couple of hours.", "12h", "HTML5, Sass, ES6");
+        setData(
+          "Baboos",
+          "A couple of hours.",
+          "12h",
+          "HTML5, Sass, ES6",
+          "Static website for an imaginary hamburger restaurant."
+        );
         break;
       case "spacex":
         setData(
           "SpaceX",
           "Another weekend during lockdown...",
           "18h",
-          "GraphQL, React"
+          "GraphQL, React",
+          "Useless application to display info about all kinds of information about SpaceX flights. I've built this to get into GraphQL and React."
         );
         break;
       case "portfolio_vanilla":
@@ -75,7 +73,8 @@ elements.forEach((element) =>
           "Portfolio (Vanilla)",
           "June 2020",
           "24h",
-          "Good old HTML5, Sass and vanilla Javasscript"
+          "Good old HTML5, Sass and vanilla Javasscript",
+          "The very website you're looking at. Simple vanilla website for dislaying some projects I've worked on."
         );
         break;
     }
