@@ -1,5 +1,6 @@
 /* VARIABLES */
 let GitURL = "https://github.com/BertelsBenjamin";
+let demoURL = "https://bertelsbenjamin.github.io";
 let wantedRepos = [...document.getElementsByClassName("project")];
 let gitHubRepos = JSON.parse(localStorage.getItem("gitHubRepos"));
 let activeElement = document.getElementById("active");
@@ -11,6 +12,7 @@ let projectDuration = document.querySelector('[aria-label="project-duration"]');
 let projectSourceCode = document.querySelector(
   '[aria-label="project-sourcecode"]'
 );
+let projectDemo = document.querySelector('[aria-label="project-demo"]');
 let projectTechnologies = document.querySelector(
   '[aria-label="project-technologies"]'
 );
@@ -25,6 +27,7 @@ function setData(title, timespan, duration, technologies, description) {
   projectTimeSpan.innerHTML = timespan;
   projectDuration.innerHTML = duration;
   projectSourceCode.children[0].href = `${GitURL}/${projectTitle.innerHTML.toLowerCase()}`;
+  projectDemo.children[0].href = `${demoURL}/${projectTitle.innerHTML.toLowerCase()}`;
   projectTechnologies.innerHTML = technologies;
   projectDescription.innerHTML = description;
 }
