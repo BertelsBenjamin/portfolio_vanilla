@@ -1,7 +1,5 @@
 /* VARIABLES */
-
-let APIURL = "https://api.github.com/repos/BertelsBenjamin/";
-let GitURL = "https://github.com/BertelsBenjamin/";
+let GitURL = "https://github.com/BertelsBenjamin";
 let wantedRepos = [...document.getElementsByClassName("project")];
 let gitHubRepos = JSON.parse(localStorage.getItem("gitHubRepos"));
 let activeElement = document.getElementById("active");
@@ -35,11 +33,13 @@ function setData(title, timespan, duration, technologies, description) {
 let elements = [...document.getElementsByClassName("project")];
 elements.forEach((element) =>
   element.addEventListener("click", (e) => {
+    // SET STYLING BY REMOVING/ADDING CLASSNAME "ACTIVE"
     let activeElement = document.getElementById("active");
-    // Hardcoded the [0] because there's only one active project
     activeElement.id = "";
     e.srcElement.id = "active";
     activeElement = document.getElementById("active");
+
+    // SET DISPLAYED DATA ACCORDING TO ACTIVE ELEMENT's ARIA-LABEL PROPERTY
     switch (activeElement.ariaLabel) {
       case "patrimonium":
         setData(
@@ -65,12 +65,12 @@ elements.forEach((element) =>
           "Another weekend during lockdown...",
           "18h",
           "GraphQL, React",
-          "Useless application to display info about all kinds of information about SpaceX flights. I've built this to get into GraphQL and React."
+          "Application for displaying data about SpaceX flights. Benjamin built this for fun just to get into GraphQL and React."
         );
         break;
       case "portfolio_vanilla":
         setData(
-          "Portfolio (Vanilla)",
+          "Portfolio_vanilla",
           "June 2020",
           "24h",
           "Good old HTML5, Sass and vanilla Javasscript",

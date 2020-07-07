@@ -9,6 +9,10 @@ body {
   #socials {
     background-color: $color-bg-2;
   }
+  .go-home {
+    border-radius: 5px 0 0 5px;
+    background: transparentize($color: $color-bg-3, $amount: 0.5);
+  }
   .link,
   .nav-link {
     color: $color-acc-3;
@@ -72,22 +76,22 @@ body {
     font-family: $font-bungeeInline;
   }
 
-  .highlight-red {
+  .highlight-blue {
     color: $color-acc-1;
     font-family: $font-bungeeInline;
   }
-  .highlight-green {
+
+  .highlight-red {
     color: $color-acc-2;
     font-family: $font-bungeeInline;
   }
-  .highlight-yellow {
+  .highlight-green {
     color: $color-acc-3;
-    font-family: $font-spinnaker;
-  }
-
-  .highlight-blue {
-    color: $color-acc-4;
     font-family: $font-bungeeInline;
+  }
+  .highlight-yellow {
+    color: $color-acc-4;
+    font-family: $font-spinnaker;
   }
 
   [class^="svg-inline"] {
@@ -137,9 +141,12 @@ body {
   }
   #projects {
     #dashboard {
-      font-size: 12px;
+      font-size: 16px;
       .project {
         color: $color-bg-3;
+        &:hover {
+          cursor: pointer;
+        }
       }
       .prefix {
         color: $color-acc-2;
@@ -148,5 +155,9 @@ body {
   }
   #contact {
     color: $color-text;
+  }
+  #footer {
+    font-size: 12px;
+    text-align: center;
   }
 }
