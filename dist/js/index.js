@@ -65,7 +65,7 @@ elements.forEach((element) =>
           "Another weekend during lockdown...",
           "18h",
           "GraphQL, React",
-          "Application for displaying data about SpaceX flights. Benjamin built this for fun just to get into GraphQL and React."
+          "Application for displaying data about SpaceX flights. I built this with the help of Brad Traversy for fun just to get into GraphQL and React."
         );
         break;
       case "portfolio_vanilla":
