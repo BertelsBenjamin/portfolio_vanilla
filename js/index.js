@@ -1,6 +1,5 @@
 /* VARIABLES */
 let GitURL = "https://github.com/BertelsBenjamin";
-let demoURL = "https://bertelsbenjamin.github.io";
 let wantedRepos = [...document.getElementsByClassName("project")];
 let gitHubRepos = JSON.parse(localStorage.getItem("gitHubRepos"));
 let activeElement = document.getElementById("active");
@@ -22,12 +21,13 @@ let projectDescription = document.querySelector(
 
 /* FUNCTIONS */
 
-function setData(title, timespan, duration, technologies, description) {
+function setData(title, timespan, duration, demoRef, demoText, technologies, description) {
   projectTitle.innerHTML = title;
   projectTimeSpan.innerHTML = timespan;
   projectDuration.innerHTML = duration;
   projectSourceCode.children[0].href = `${GitURL}/${projectTitle.innerHTML.toLowerCase()}`;
-  projectDemo.children[0].href = `${demoURL}/${projectTitle.innerHTML.toLowerCase()}`;
+  projectDemo.children[0].href = demoRef;
+  projectDemo.children[0].innerHTML = demoText;
   projectTechnologies.innerHTML = technologies;
   projectDescription.innerHTML = description;
 }
@@ -49,7 +49,9 @@ elements.forEach((element) =>
           "Patrimonium",
           "11/2019 - 3/2020",
           "150h",
-          "Angular, Express.js, MySQL",
+          "/",
+          "/",
+          "MEAN-stack (MySQL)",
           "SaaS project that automates the service department of a piano service company. It let's technicians log their activities and dispatchers generate data driven PDF reports."
         );
         break;
@@ -58,6 +60,8 @@ elements.forEach((element) =>
           "Baboos",
           "A couple of hours.",
           "12h",
+          "https://bertelsbenjamin.github.io/baboos",
+          "Demo",
           "HTML5, Sass, ES6",
           "Static website for an imaginary hamburger restaurant."
         );
@@ -67,7 +71,9 @@ elements.forEach((element) =>
           "SpaceX",
           "Another weekend during lockdown...",
           "18h",
-          "GraphQL, React",
+          "/",
+          "/",
+          "GERN-stack (GraphQL)",
           "Application for displaying data about SpaceX flights. Benjamin built this for fun just to get into GraphQL and React."
         );
         break;
@@ -76,6 +82,8 @@ elements.forEach((element) =>
           "Portfolio_vanilla",
           "June 2020",
           "24h",
+          "https://bertelsbenjamin.github.io/portfolio_vanilla",
+          "Demo",
           "Good old HTML5, Sass and vanilla Javasscript",
           "The very website you're looking at. Simple vanilla website for dislaying some projects I've worked on."
         );
