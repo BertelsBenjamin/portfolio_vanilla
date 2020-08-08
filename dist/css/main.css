@@ -95,7 +95,6 @@ body {
     font-family: "Do Hyeon", sans-serif;
     box-shadow: 0px 7px 18px -8px black; }
   body #techstack {
-    text-align: right;
     background-color: #1f2833; }
     body #techstack .card {
       background-color: #191c25;
@@ -214,6 +213,8 @@ body {
     body #home .button-wrapper {
       text-align: center;
       margin-top: 5vh; }
+  body #techstack .section-title {
+    text-align: right; }
   body #techstack .techstack-card-wrapper {
     display: flex;
     flex-direction: column;
@@ -269,6 +270,8 @@ body {
           grid-area: bottom; }
   body #contact {
     height: auto; }
+    body #contact .section-title {
+      text-align: center; }
     body #contact .list {
       display: flex;
       flex-direction: column;
